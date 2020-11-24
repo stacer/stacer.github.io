@@ -1,8 +1,17 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  技术: /categories/ || fas fa-folder-open
+  好玩: 
+    - 【玩转Hexo】 || /playhexo/
+    - 【玩转手机】 || /playphone/
+    - 【玩转电脑】 || /playpc/
+  生活:
+    - 【图库】 || /galary/
+    - 【电影】 || /movie/   
+#rss: /atom.xml
 
 # Content
 excerpt_link: Read More
@@ -35,3 +44,192 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# 代码高亮
+highlight_theme: light
+
+# 代码复制
+highlight_copy: true
+
+# 代码展开/关闭
+highlight_shrink: true
+
+# 顶部图
+# index_img:主页的top_img
+index_img: https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124222918.png
+# default_top_img: 默认的top_img.当页面的top_img没有配置,会显示这个
+default_top_img: https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224152.png
+# archive_img: 归档页面的top_img
+archive_img: https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224311.png
+# tag_img: tag子页面的默认top_img
+tag_img: https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224345.png
+# tag_per_img: 可配置每个tag的top_img
+# category_img: category 子页面的默认 top_img
+cagegory_img: https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224556.png
+# category_per_img: 可配置每个category的 top_img
+
+# 其他页面的顶部图
+# /tags/index.md,/categories/index.md,/自定义页面/index.md和文章页的top_img
+# 到对应 md 页面设置 front_matter 中的 top_img
+
+# 所有top_img 可配置以下值
+# 留空:显示默认的top_img(如有),否则显示默认的颜色,文章页留空会显示 cover 的值
+# img 链接: 图片的连接,显示所配置的图片
+# 颜色: https://butterfly.js.org/posts/4aa8abbe/#%E9%A0%82%E9%83%A8%E5%9C%96
+# false: 不显示
+# 示例:
+# tag_per_img:
+#   aplayer: https://xxxxx.png
+#   android: xxxx.png
+# category_per_img:
+#   随想: xxxx.png
+#   推荐: xxxx.png
+
+# 文章指定
+# 在文章的front-matter 区域添加 sticky: 1 ,数值越大，置顶优先级越大
+# 文章封面
+# 在文章的 front-matter cover
+cover:
+  # 是否顯示文章封面
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # 封面顯示的位置
+  # 三個值可配置 left , right , both
+  position: both
+  # 當沒有設置cover時，默認的封面顯示
+  default_cover:
+    - https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224311.png
+    - https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224345.png
+    - https://image-1256257424.cos.ap-shanghai.myqcloud.com//img2020/11/2420201124224556.png
+
+# 文章相关信息显示(发表什么时候,什么分类等)
+post_meta:
+  page:
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
+    categories: true # true or false 主頁是否顯示分類
+    tags: true # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+  post:
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
+    categories: true # true or false 文章頁是否顯示分類
+    tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+
+# 文章版权
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 文章打赏
+reward:
+  enable: true
+  QR_code:
+    # 需要单独改
+    - img: /image/wechat.jpg
+      link:
+      text: 微信
+    - img: /image/alipay.jpg
+      link:
+      text: 支付寶
+
+# 文章隐藏
+# 安装 hexo-generator-indexed 或 hexo-hide-posts
+# 文章目录
+toc:
+  # 是否显示toc
+  enable: true
+  # 是否显示章节数
+  number: true
+
+# 相关文章推荐
+related_post:
+  enable: true
+  limit: 6 # 顯示推薦文章數目
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日  
+
+# 文章锚点
+# anchor
+# when you scroll in post , the url will update according to header id.
+anchor: true
+
+# 头像
+avatar:
+  img: /img/avatar.png
+  effect: true # 頭像會一直轉圈
+
+# 开启图片描述文字显示
+photofigcaption: true
+
+# Footer设置
+## 博客年份
+footer:
+  owner:
+    enable: true
+    since: 2018
+
+## 页脚自定义文本
+custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
+
+# 访问人数
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 运行时间
+runtimeshow:
+  enable: true
+  publish_date: 6/7/2018 00:00:00  
+  ##網頁開通時間
+  #格式: 月/日/年 時間
+  #也可以寫成 年/月/日 時間
+
+#  搜索
+# 需要安装 hexo-algolia 或 hexo-algoliasearch
+# algolia_search:
+#   enable: true
+#   hits:
+#     per_page: 6
+
+# 网站背景
+# 圖片格式 url(http://xxxxxx.com/xxx.jpg)
+# 顏色（HEX值/RGB值/顔色單詞/漸變色)
+# 留空 不顯示背景
+background:
+
+# 背景特效
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false  #設置是否每次點擊都更換綵帶
+  mobile: false # false 手機端不顯示 true 手機端顯示
+
+# 页面美化
+# 美化頁面顯示
+beautify:
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: "#F47466"
+
+# 加载动画
+# 加載動畫 Loading Animation
+preloader: true
+
+# aplayer
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: true
+  per_page: true
+inject:
+  head:
+    - '<style type="text/css">#toggle-sidebar {left:100px}</style>'
+  bottom:
+    - <div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>  

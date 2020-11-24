@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "hexo": "^5.0.0",
+    "hexo-auto-category": "^0.2.0",
     "hexo-cli": "^4.2.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
@@ -24,6 +25,7 @@
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
+    "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-butterfly": "^3.3.0"
   }
 }
